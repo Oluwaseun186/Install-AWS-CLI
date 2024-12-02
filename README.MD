@@ -1,13 +1,15 @@
 #THis is just a basic way to run action
 
 ```yaml
-name: install app
+name: "install-aws-cli"
 on: push
 jobs:   
-    install-app
+    install-aws-cli
     runs-on: ubuntu-latest
     steps:
         -name:  checkout repository
          uses:  actions/checkout@v2
-        -name:  install mini
-         uses:  oluwaseun7/install-mini@v1 
+        -name:  "install latest aws cli"
+         uses:  oluwaseun7/aws-cli-actions@v1
+        -name:  "version"
+         run:   aws --version 
