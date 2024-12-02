@@ -2,7 +2,7 @@
 
 ```yaml
 name: "install-aws-cli"
-on: push
+on: [push]
 jobs:   
     install-aws-cli
     runs-on: ubuntu-latest
