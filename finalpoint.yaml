@@ -1,0 +1,10 @@
+name: install-app
+description: "Installs the app"
+author: "Adewumo Olabode"
+version: "1.0.0"
+runs:
+  using: composite
+  steps:
+    - name: install-app
+      shell: bash
+      run: checker.sh
