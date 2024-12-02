@@ -1,4 +1,4 @@
-#THis is just a basic way to run action
+#This is just a basic way to run action
 
 ```yaml
 name: "install-aws-cli"
